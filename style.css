@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    font-family: sans-serif;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    background-color: #ff7700;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cpolygon fill='%23c7422a' points='957 450 539 900 1396 900'/%3E%3Cpolygon fill='%23932127' points='957 450 872.9 900 1396 900'/%3E%3Cpolygon fill='%23ce622b' points='-60 900 398 662 816 900'/%3E%3Cpolygon fill='%23be3c39' points='337 900 398 662 816 900'/%3E%3Cpolygon fill='%23c26f78' points='1203 546 1552 900 876 900'/%3E%3Cpolygon fill='%238e2568' points='1203 546 1552 900 1162 900'/%3E%3Cpolygon fill='%239e7257' points='641 695 886 900 367 900'/%3E%3Cpolygon fill='%23bd174b' points='587 900 641 695 886 900'/%3E%3Cpolygon fill='%23b7138a' points='1710 900 1401 632 1096 900'/%3E%3Cpolygon fill='%2393206a' points='1710 900 1401 632 1365 900'/%3E%3Cpolygon fill='%23a0299f' points='1210 900 971 687 725 900'/%3E%3Cpolygon fill='%237256a4' points='943 900 1210 900 971 687'/%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    width: 50%;
+    padding: 10%;
+    color: white;
+    height: 100%;
+}
+
+p {
+    font-size: 2rem;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+div{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 10%;
+}
+
+.guess {
+    all: unset;
+    width: 20%;
+    height: 100%;
+    background-color: rgb(241, 218, 4);
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+input[type='number']::-webkit-inner-spin-button, 
+input[type='number']::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+.num-input {
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    width: 50%;
+    height: 100%;
+    background-color:rgb(241, 218, 4);
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgb(241, 218, 4);
+}
+
+.replay {
+    display: none;
+}
+.replay-active {
+    all: unset;
+    width: 20%;
+    height: 10%;
+    background-color: rgb(139, 223, 30);
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
